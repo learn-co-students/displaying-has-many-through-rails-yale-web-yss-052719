@@ -1,4 +1,5 @@
 <h2><%= @post.title %></h2>
+
 <p>
   Content: <%= @post.content %>
 </p>
@@ -7,3 +8,4 @@ Comments:
     <%= link_to comment.user.username, user_path(comment.user) %> said
     <%= comment.content %>
   <% end %>
+
